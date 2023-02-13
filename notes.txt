@@ -1,0 +1,35 @@
+Typescript helps to catch errors during development. 
+Typescript is compiled into Javascript.
+Define an interface to specify the type response.data to expect, their fields and their data types. Like a response model. 
+Specify the type of argument expected in function definition. Catches error if we pass in wrong order of arguments 
+into a function. 
+
+Basic Types in Typescript:
+
+Type -> Shortcut, easy way to refer to the different properties + functions a value has. 
+Every value in Typescript has a type. 
+Eg the value 'red' is a string, and has the functions and properties of a string. 
+Eg. The type we created , 'Todo' interface 
+Types are used by Typescript compiler to analyze our code for errors. 
+Types allow other engineers to understand what values are flowing around our codebase. 
+
+Type Annotations and Type Inference:
+
+Type Annotations: Code we add to tell Typescript what type of value a variable will refer to. (variables.ts)
+    When we declare a variable and initialize it later
+    When a function returns 'any' type and we need to clarify the value. AVOID VARIABLES WITH ANY!!
+    When we want a variable to have a type that can't be inferred
+Type Inference: Typescript tries to figure out what type of value a variable belongs to.
+
+Typed Arrays: Arrays where each element is some consistent type of value. 
+
+Tuple: Array-like structure where each element represents some property of a record. 
+
+Interfaces: Creates a new type, describing the property names and value types of an object. 
+
+General strategy for reusable code in TS:
+    1. Create functions that accept arguments that are typed with interfaces. 
+    2. Objects/classes can decide to 'implement' a given interface to work with a function. 
+
+Private methods: This method can only be called by other methods in this class. 
+Protected: Can be called by other methods in this class, or by other methods in child classes. 
